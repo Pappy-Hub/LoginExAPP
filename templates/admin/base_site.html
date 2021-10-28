@@ -1,0 +1,20 @@
+{% extends 'admin/base.html' %}
+{% load static %}
+
+
+{% block branding%}
+<h1 id='head'>
+    <!-- LogiNExpress -->
+ 
+    
+    <img src="{% static '/images/10.png' %}" alt="Login Express" height="50"  width="70" class="logo"> 
+    Logi<strong>N</strong><strong>E</strong>xpress Admin Area
+</h1>
+{% endblock %}
+
+
+{% block extrastyle %}
+
+<link rel="stylesheet" href="{% static '/CSS/admin.css' %}">
+
+{% endblock %}

@@ -1,0 +1,88 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/CSS/index.css' %}">
+    <tWelcome /title>
+</head>
+
+<body>
+
+
+    <!-- SECTION 1 BEGINS -->
+
+
+    <section>
+        <div class="sec_1">
+            <nav>
+                <div>
+                    <ul>
+                        <li class="logo"> <a href="{% url 'home' %}">Logi<strong>N</strong><strong>E</strong>xpress</a>
+                        </li>
+
+                        <div class="item">
+                            <li class="sec_1_1"><a href="{% url 'instantbuy' %}">Instant Buy/Sell</a></li>
+                            <li class="sec_1_2"><a href="{% url 'learn' %}">Learn</a></li>
+                            <button class="btg1"><a href="{% url 'login' %}">Log In</a></button>
+                            <button class="btg2"><a href="{% url 'getstarted' %}">Getting Started</a></button>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+        </div> <!-- <h1>{{request.user}}</h1> -->
+
+
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- END OF SECTION 1  -->
+
+
+
+
+    <div class="form2">
+    <h3>Welcome Back!</h3>
+        <br>
+        <br>
+        <form action="" method="POST">
+
+        {% csrf_token %}
+        <!-- {{ form }} -->
+            
+            <br>
+            <br>
+            <br>
+            <input type="text" name="username" placeholder="Username" class="formlogin"> <br> <br>
+            <input type="text" name="password" placeholder="Password" class="formlogin"> <br> <br>
+
+            <div class="remember">
+                <div>
+                    <input type="checkbox"> Remember Password
+                </div>
+                <div class="forgot">
+                    <p>Forgot Password?</p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <input type="submit" value="Sign Up" class="form_btn4">
+            <!-- <button class="form_btn4">Sign Up</button><br> -->
+            <p class="p2"> New User? <span class="click">Click here</span> </p>
+
+        </form>
+    </div>
+    <!-- {% for message in messages %}
+    <h3> {{message}} </h3>
+    {% endfor %} -->
+
+</body>
+
+</html>

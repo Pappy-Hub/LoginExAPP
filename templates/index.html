@@ -1,0 +1,406 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/CSS/index.css' %}">
+    <title>HOME PAGE</title>
+</head>
+
+<body>
+
+    <!-- SECTION 1 BEGINS -->
+
+    <!-- <h1>{{request.user}}</h1> -->
+
+
+    <section>
+        <div></div>
+            <nav class="sec_1">
+                <div>
+                    <ul>
+                        <li class="logo"> <a href="{% url 'home' %}">Logi<strong>N</strong><strong>E</strong>xpress</a>
+                        </li>
+
+                        <div class="item">
+                            <li class="sec_1_1"><a href="{% url 'instantbuy' %}">Instant Buy/Sell</a></li>
+                            <li class="sec_1_2"><a href="{% url 'learn' %}">Learn</a></li>
+                            <button class="btg1"><a href="{% url 'login' %}">Log In</a></button>
+                            <button class="btg2"><a href="{% url 'getstarted' %}">Getting Started</a></button>
+                        </div>
+                    </ul>
+                </div>
+            </nav>        
+    </section>
+<!-- 
+    {% block content %}
+    {% endblock content %} -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- END OF SECTION 1  -->
+
+
+    <!-- SECTION 2 BEGINS -->
+
+    <section>
+        <div class="sec_2">
+            <div class="Buy">
+                <h1>Buy, sell and manage your <br>
+                    Crypto on LoginExpress.</h1>
+            </div>
+            <div class="Cryto">
+                <h5>Easy trade Cryptocurrencies like BTC, USDT, ETH, LTC & XRP with NGN</h5>
+            </div>
+
+            <div>
+                <button class="sec_2_btn1"><a href="{% url 'getstarted' %}">Get Started</a></button>
+            </div>
+            <br>
+
+            <div class="sec_2_btns">
+                <img src="{% static '/images/12.png' %}" alt="" class="sec_2_btn2">
+                <img src="{% static '/images/13.png' %}" alt="" class="sec_2_btn3">
+                <!-- <div><button class="sec_2_btn2">Download on the App Store</button></div>
+                <div><button class="sec_2_btn3">Get on Google Play</button></div> -->
+            </div>
+
+
+        </div>
+
+    </section>
+    <br>
+    <br>
+    <br>
+
+
+
+    <!-- SECTION TWO ENDS -->
+
+    <!-- SECTION THREE BEGINS -->
+
+
+    <section>
+        <div class="currency">
+            <DIV class="currencies">
+
+
+                <DIV>
+                    <H5>BTC/NGN -3.21%</H5>
+                    <H5>20,560.101.59 NGN</H5>
+                </DIV>
+
+                <DIV>
+                    <H5>USDT/NGN +10.20%</H5>
+                    <H5>453.559 NGN</H5>
+                </DIV>
+
+                <DIV>
+                    <H5>ETH/NGN +256%</H5>
+                    <H5>818,560,101.59 NGN</H5>
+                </DIV>
+                <DIV>
+                    <H5>LTC/NGN -254%</H5>
+                    <H5>81,002.32 NGN</H5>
+                </DIV>
+                <DIV>
+                    <H5>XRP/NGN -3.21%</H5>
+                    <H5>226,560.101 NGN</H5>
+                </DIV>
+
+
+            </DIV>
+        </div>
+
+
+    </section>
+
+
+    <!-- SECTION THREE ENDS -->
+
+
+    <!-- SECTION FOUR BEGINS -->
+
+
+    <section>
+        <div class="sec_4">
+            <div class="involved">
+                <h2>Why do people get involved with Cryptocurrencies?</h2>
+
+            </div>
+
+            <div class="option">
+                <div class="option1">
+                    <div>
+                        <img src="{% static '/images/1.png' %}" alt="" class="review1">
+                    </div>
+
+                    <h3>Easy Mode of Payment </h3>
+                    <p> People can now easily send and receive money <br>
+                        from anywhere in the world to purchase goods and <br>
+                        pay for services</p>
+                   
+                </div>
+                <div class="option1">
+                    <div>
+                        <img src="{% static '/images/1.png' %}" alt="" class="review1">
+                    </div>
+                    <h3>Financial freedom</h3>
+                    <p>Just like the internet o single entity controls the <br>
+                        Cryto network which provides users transparency <br>
+                        and privacy, which puts you in absolute control of <br>
+                        your money</p>
+                    
+                </div>
+                <div class="option1">
+                    <div>
+                        <img src="{% static '/images/2.png' %}" alt="" class="review1">
+                    </div>
+                    <h3>investment</h3>
+                    <p>The constant demand as you made Cryptocurrencies a <br>
+                        Digital gold used for alternative store of wealth on <br>
+                        long term investments</p>                 
+                </div>
+
+            </div>
+
+            <div class="sec_4b">
+                <div class="div_btn">
+                    <button class="learn_btn">Learn More</button>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="crypto2">Buy and Sell your Cryptocurrencies in 3 simple steps</h2>
+            </div>
+
+
+            <div class="sec_4b1">
+                <div>
+                    <div class="sec_4b">
+                        <div class="sec_4b_flex">
+                            <div>
+                                <h4>1</h4>
+                            </div>
+                            <div>
+                                <h3>Create a free Account</h3>
+
+                                <p>Sign up for your free LogiNExpress wallet on web, iOS, or Android devices and follow
+                                    our
+                                    <br>
+                                    easy process to set up your profile
+                                </p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <img src="{% static '/images/1.png' %}" alt="" class="review1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div>
+                <div class="sec_4b">
+                    <div class="sec_4b_flex">
+
+                        <div>
+                            <img src="{% static '/images/2.png' %}" alt="" class="review1">
+                        </div>
+
+                        <div>
+                            <h4>2</h4>
+                        </div>
+
+                        <div>
+                            <h3>Deposit</h3>
+                            <p>Choose your preferred deposit option like bank transfer, credit/debit card <br>
+                                or send digital asert directly to your wallet for easy funding/withdrawal
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="sec_4b">
+                <div class="sec_4b_flex">
+                    <div>
+                        <h4>3</h4>
+                    </div>
+                    <div>
+                        <h3>Buy/Sell Crypto</h3>
+
+                        <p>Buy BTC, USDT, ETH, LTC, XRP, DOGE and securely store it <br>
+                            in your wallet or send it easily to friend and family
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="{% static '/images/1.png' %}" alt="" class="review1">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- SECTION FOUR ENDS
+
+    
+    SECTION FIVE BEGINS -->
+
+    <section>
+        <div class="sec_5">
+            <div>
+                <div>
+                    <h3>Ready to trade, Buy/Sell Cryptocurrenciesin 10 minutes</h3>
+                    <h1>Create your account for free and Start trading today</h1>
+                    <button class="sec_5_btn">Get Started</button>
+                    <br>
+                    <br>
+
+                </div>
+            </div>
+
+            <div class="apps">
+                <div>
+                    <img src="{% static '/images/12.png' %}" alt="" class="sec_2_btn2">
+                    <img src="{% static '/images/13.png' %}" alt="" class="sec_2_btn3">
+
+                    <!--                     
+                    <button class="sec_5_btn1"><img src="{% static '/images/8.png' %}" alt="" class="app"><span
+                            class="app1">Download on the <br> <span class="app2">App Store</span> </button>
+                </div>
+
+                <div>
+                    <button class="sec_5_btn2"><img src="{% static '/images/9.png' %}" alt="" class="app"><span
+                            class="app1">Download on the <br> <span class="app2">App Store</span> </button> -->
+                </div>
+            </div>
+
+
+
+
+            <!-- <div>
+                <button class="sec_5_btn2"><img src="{% static '/images/9.png' %}" alt="" class="gapp"><span
+                        class="app2">Get on <br><span class="app3"></span>Google
+                        Play</span></button>
+            </div> -->
+        </div>
+
+
+
+    </section>
+
+
+    <section>
+        <div class="sec_6">
+            <h1>Customer's Review</h1>
+            <div class="review">
+                <div>
+                    <img src="{% static '/images/3.png' %}" alt="" class="review1">
+                    <p class="review2">Trading on Login Express mobile & web <br>
+                        platforms has been a smooth <br>
+                        experience for me quitete easy to <br>
+                        navigate</p>
+                    <img src="{% static '/images/1.png' %}" alt="" class="review3">
+                    <p class="reviewflex1"> <strong>Login</strong><br> Express</p>
+                </div>
+
+                <div>
+                    <img src="{% static '/images/3.png' %}" alt="" class="review1">
+                    <p class="review2">They have the best rate compared to <br>
+                        other platforms with fast payout</p>
+                    <img src="{% static '/images/1.png' %}" alt="" class="review4">
+                    <p class="reviewflex2"> <strong>Login</strong><br> Express</p>
+                </div>
+
+                <div>
+                    <img src="{% static '/images/3.png' %}" alt="" class="review1">
+                    <p class="review2">Easy to fund and withdraw coins or cash <br>
+                        on their platform, <br>
+                        I will definitely trade with them agin</p>
+                    <img src="{% static '/images/1.png' %}" alt="" class="review3">
+                    <p class="reviewflex1"> <strong>Login</strong><br> Express</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section>
+        <div class="sec_7">
+            <DIV class="contact">
+
+
+                <DIV>
+                    <H4>Products</H4>
+                    <p>Bitcoin</p>
+                    <p>Alt</p>
+                    <p>Flat</p>
+                    <p>Refill</p>
+                    <p>P2P</p>
+                </DIV>
+
+                <DIV>
+                    <H4>Learn</H4>
+                    <p>Blog</p>
+                    <p>Health center</p>
+                </DIV>
+
+                <DIV>
+                    <H4>Contacts</H4>
+                    <p>hello@loginexpress.com</p>
+                    <p>support@loginexpress.comr</p>
+                    <div class="msgs">
+                        <img src="{% static '/images/4.png' %}" alt="" class="msg">
+                        <img src="{% static '/images/5.png' %}" alt="" class="msg">
+                        <img src="{% static '/images/6.png' %}" alt="" class="msg">
+                        <img src="{% static '/images/7.png' %}" alt="" class="msg">
+                    </div>
+                </DIV>
+                <DIV>
+                    <H4>Company</H4>
+                    <p>About us</p>
+                    <p>Careers</p>
+                    <p>Rates</p>
+                    <p>Mobile</p>
+                </DIV>
+                <DIV>
+                    <H4>Legal</H4>
+                    <p>Private Policy</p>
+                    <p>Anti-Money Laundring</p>
+                    <p>Terms & Condition</p>
+                </DIV>
+
+
+            </DIV>
+
+        </div>
+
+    </section>
+
+
+    <section>
+        <div class="sec_8">
+            <div>
+
+                <img src="{% static '/images/11.png' %}" alt="" class="copy">2021 LoginExpress Technologies All Rights
+                Reserved
+            </div>
+        </div>
+    </section>
