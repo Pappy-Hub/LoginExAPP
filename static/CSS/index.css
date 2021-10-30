@@ -571,6 +571,103 @@ form{
 
 }
 
-/* .form2 form{
-    outline-color: white;
-} */
+
+/* INSTANT BUY/SELL FORM STYLE */
+
+.crytocurrency{
+    width: 240px;
+}
+
+
+.BuySell_btn3{
+    width: 260px;
+    height: 30px;
+    background-color: #7C20BF;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    position: relative;
+    top: -40px;
+}
+
+select{
+  width: 260px;
+  height: 30px;
+  border: none;
+  color: #7C20BF;
+}
+
+.buy_btn{
+    width: 150px;
+    position: relative;
+    top: 21px;
+    border-radius: 5px;
+    background-color: whitesmoke; 
+}
+
+.sell_btn{
+    width: 120px;
+    margin-left: 140px;
+    border-radius: 5px;
+    background-color: #E4E4E4;
+    outline: none; 
+}
+
+.amount1{
+    font-size: 18px;
+    position: relative;
+    bottom: 25px;
+    color: black;
+}
+.amount2{
+    width: 260px;
+    height: 25px;
+    outline: none;
+    border: none;  
+    position: relative;
+    bottom: 45px;
+}
+
+.BuySell_btn3{
+    width: 260px;
+    height: 30px;
+    background-color: #7C20BF;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    margin-top: 40px;
+}
+
+ 
+/* WELCOME PAGE STYLE */
+
+.welcome_btn{
+    width: 260px;
+    height: 30px;
+    background-color: #7C20BF;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    margin-top: 40px;
+}
+
+.Msg_Img{
+    width: 80px;
+    margin-left: 150px;
+    margin-top: 60px;
+}
+
+
+.continue{
+    width: 260px;
+    height: 30px;
+    background-color: #7C20BF;   
+    border-radius: 5px;
+    border: none;
+    margin-top: 20px;       
+    }
+
+.continue a{
+    text-decoration: none;
+    color: whitesmoke;
+}   

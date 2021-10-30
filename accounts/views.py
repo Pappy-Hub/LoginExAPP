@@ -14,3 +14,5 @@ def logout(request):
 def dashbaord(request):
     return render(request, 'accounts/dashboard.html')     
 
+# def welcome(request):
+#     return render (request, 'accounts/welcome.html')  

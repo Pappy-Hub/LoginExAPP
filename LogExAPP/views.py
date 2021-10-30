@@ -15,8 +15,7 @@ def get_started(request):
   
 
 
-# def login(request):
-          
+# def login(request):          
 #     return render(request, 'login.html')         
  
 
@@ -30,9 +29,7 @@ def instant_buy(request):
     #  return redirect ('/')
 
 
-def dashboard(request):
-   
-
+def dashboard(request): 
     return render(request, 'dashboard.html')
   
 
@@ -55,3 +52,9 @@ def business(request):
 def base(request):
     return render(request, 'base.html')       
     #  return redirect ('/')
+
+
+
+
+def welcome(request):
+    return render(request, 'welcome.html')    

@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static '/CSS/index.css' %}">
-    <title>GETTING STARTED</title>
+    <tWelcome /title>
 </head>
 
 <body>
@@ -23,6 +23,7 @@
                     <ul>
                         <li class="logo"> <a href="{% url 'home' %}">Logi<strong>N</strong><strong>E</strong>xpress</a>
                         </li>
+
                         <div class="item">
                             <li class="sec_1_1"><a href="{% url 'instantbuy' %}">Instant Buy/Sell</a></li>
                             <li class="sec_1_2"><a href="{% url 'learn' %}">Learn</a></li>
@@ -31,13 +32,10 @@
                         </div>
                     </ul>
                 </div>
-
             </nav>
         </div>
-
-
     </section>
-    <br>
+
     <br>
     <br>
     <br>
@@ -46,36 +44,42 @@
 
 
 
-    <div class="form1">
-        <h3>Welcome!</h3>
+
+    <div class="form2">
+        <h3 style="font-weight: lighter;">You're Almost In</h3>
+        <h3>Welcome Pappy</h3>
+        <div>
+            <img src="{% static '/images/14.png' %}" alt="" class="Msg_Img">
+        </div>
+        <br>
+
+        <p style="text-align: center; font-size: small;">
+            An activation link has been sent to pappy@loginexpress.com <br>
+            Please check on the link to very your email and <br>
+            activate your LoginExpress account
+
+        </p>
         <form action="" method="POST">
 
             {% csrf_token %}
-            <!-- {{form}} -->
 
-            <div>
-                <button class="form_btn1"><a href="{% url 'getstarted' %}">Individual</a> </button>
-            </div>
-            <div>
-                <button class="form_btn2"><a href="{% url 'getstarted' %}">Business</a> </button>
-            </div>
-            <br>
-            <input type="text" name="username" placeholder="Username" class="formstarted"> <br> <br>
-            <input type="text" name="fullname" placeholder="Fullname" class="formstarted"> <br> <br>
-            <input type="text" name="Email" placeholder="Email" class="formstarted"> <br> <br>
-            <input type="number" name="phonenumber" placeholder="Phone Number" class="formstarted"> <br> <br>
-            <input type="number" name="referralcode" placeholder="Referral Code (optional)" class="formstarted"> <br>
-            <p>By clicking the Sign Up button below, you agree to <br>
-                LoginExoress terms and services</p> <br>
-            <input type="submit" value="Sign Up" class="form_btn3">
-            <!-- <button class="form_btn3">Sign Up</button><br> -->
-            <p class="p1"> Already have an account? Click here</p>
+            <!-- <input type="submit" value="Continue" class="welcome_btn"> -->
+
+            <button class="continue"><a href="{% url 'welcome' %}">Continue</a></button>
+
+            <p style="text-align: center; font-size: 10px; margin-right: 50px; margin-top: 30px;">
+                Didn't get an email? kindly click resend email <br>
+                Wrong email supplied? Edit email address
+            </p>
 
         </form>
     </div>
+    <!-- {% for message in messages %}
+    <h3> {{message}} </h3>
+    {% endfor %} -->
     <br>
     <br>
-
+    <br>
 
     <section>
         <div class="sec_8" style="width:100%;">
@@ -86,8 +90,6 @@
             </div>
         </div>
     </section>
-
-
 </body>
 
 </html>

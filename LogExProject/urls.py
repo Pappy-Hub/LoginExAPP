@@ -2,22 +2,26 @@
 from django.contrib import admin
 from django.urls import path, include
 
-from LogExAPP.views import home, get_started, learn, instant_buy, dashboard, individual, business, base
-from accounts.views import login
-# from accounts.views import login, logout, register, dashbaord
+from LogExAPP.views import home, get_started, learn, instant_buy, dashboard, individual, business, welcome
+from accounts.views import login, register
+# from accounts.views import login, logout, register, dashboard
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home, name='home'),
     path('getstarted/', get_started, name='getstarted'),
+
     path('login/', login, name='login'),
+    path('register/', register, name='register'), 
+
     path('learn/', learn, name='learn'),
     path('instantbuy/', instant_buy, name='instantbuy'),
     path('dashboard/', dashboard, name='dashboard'),
     path('individual/', individual, name='individual'),
     path('business/', business, name='business'), 
-    path('accounts/', include('accounts.url')),
-    path('base/', base, name='base'),
+    path('welcome/', welcome, name='welcome')
+    # path('accounts/', include('accounts.urls')),
+    # path('base/', base, name='base'),
 ]
  

@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static '/CSS/index.css' %}">
-    <title>INSTANT BUY</title>
+    <title>GETTING STARTED</title>
 </head>
 
 <body>
@@ -31,6 +31,7 @@
                         </div>
                     </ul>
                 </div>
+
             </nav>
         </div>
 
@@ -40,10 +41,80 @@
     <br>
     <br>
     <br>
-    <h1 style="text-align: center; color: whitesmoke;">INSTANT BUY/SELL</h1>
-  
+
+    <!-- END OF SECTION 1  -->
 
 
+
+    <div class="form1">
+
+        <h3>Buy/Sell Instantly</h3>
+
+        <form action="" method="POST">
+
+            {% csrf_token %}
+            <br>
+
+            <div>
+                <button class="buy_btn"><a href="{% url 'instantbuy' %}">Buy</a> </button>
+            </div>
+            <div>
+                <button class="sell_btn"><a href="{% url 'instantbuy' %}">Sell</a> </button>
+            </div>
+            <br>
+
+
+            <label for="cryptos"><strong> Coin to buy </strong></label>
+            <div>
+                <select name="cryptos" id="cryptos">
+                    <option value="cryto1" class="coin">Bitcoin (BTC)</option>
+                    <option value="cryto2"> USDT</option>
+                    <option value="cryto3"> ETH</option>
+                    <option value="cryto4"> LTC</option>
+                    <option value="cryto4"> XRP</option>
+                    <option value="cryto4"> eNGN</option>
+                </select>
+            </div>
+            <br>
+            <br>
+
+            <label for="curencies"><strong> Currency</strong></label>
+            <div>
+                <select name="currencies" id="currencies">
+                    <option value="cryto1" class="coin">Naira (NGN)</option>
+                    <option value="cryto2"> Dollar (US) </option>
+                    <option value="cryto3"> Pounds (UK) </option>
+                    <option value="cryto4"> Euro </option>
+                    <option value="cryto4"> Yen </option>
+                    <option value="cryto4"> Cedi (GHA) </option>
+                </select>
+            </div>
+            <br>
+            <br>
+
+            <div >
+                <h4 class="amount1"> Amount </h4>
+                <input type="number" name="username" placeholder="NGN | 500,000,000,000 " class="amount2">
+            </div>
+
+            <input type="submit" value="Continue" class="BuySell_btn3">
+            <!-- <button class="form_btn3">Sign Up</button><br> -->
+
+        </form>
+    </div>
+    <br>
+    <br>
+
+
+    <section>
+        <div class="sec_8" style="width:100%;">
+            <div>
+                <img src="{% static '/images/11.png' %}" alt="" class="copy" style="margin-top: -10px;">2021
+                LoginExpress Technologies All Rights
+                Reserved
+            </div>
+        </div>
+    </section>
 
 
 </body>
