@@ -1,5 +1,7 @@
-
+{% extends 'base.html' %}
 {% load static %}
+{% block content %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,39 +16,11 @@
 <body>
 
     <!-- SECTION 1 BEGINS -->
-
-    <!-- <h1>{{request.user}}</h1> -->
-
-
-    <section>
-        <div></div>
-            <nav class="sec_1">
-                <div>
-                    <ul>
-                        <li class="logo"> <a href="{% url 'home' %}">Logi<strong>N</strong><strong>E</strong>xpress</a>
-                        </li>
-
-                        <div class="item">
-                            <li class="sec_1_1"><a href="{% url 'instantbuy' %}">Instant Buy/Sell</a></li>
-                            <li class="sec_1_2"><a href="{% url 'learn' %}">Learn</a></li>
-                            <button class="btg1"><a href="{% url 'login' %}">Log In</a></button>
-                            <button class="btg2"><a href="{% url 'getstarted' %}">Getting Started</a></button>
-                        </div>
-                    </ul>
-                </div>
-            </nav>        
-    </section>
-<!-- 
-    {% block content %}
-    {% endblock content %} -->
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <!-- NAVBAR -->
     <!-- END OF SECTION 1  -->
 
+    <!-- Alerts -->
+    {% include 'partials/_alerts.html' %}
 
     <!-- SECTION 2 BEGINS -->
 
@@ -61,7 +35,7 @@
             </div>
 
             <div>
-                <button class="sec_2_btn1"><a href="{% url 'getstarted' %}">Get Started</a></button>
+                <button class="sec_2_btn1"><a href="{% url 'register' %}">Get Started</a></button>
             </div>
             <br>
 
@@ -146,7 +120,7 @@
                     <p> People can now easily send and receive money <br>
                         from anywhere in the world to purchase goods and <br>
                         pay for services</p>
-                   
+
                 </div>
                 <div class="option1">
                     <div>
@@ -157,7 +131,7 @@
                         Cryto network which provides users transparency <br>
                         and privacy, which puts you in absolute control of <br>
                         your money</p>
-                    
+
                 </div>
                 <div class="option1">
                     <div>
@@ -166,7 +140,7 @@
                     <h3>investment</h3>
                     <p>The constant demand as you made Cryptocurrencies a <br>
                         Digital gold used for alternative store of wealth on <br>
-                        long term investments</p>                 
+                        long term investments</p>
                 </div>
 
             </div>
@@ -270,37 +244,22 @@
                     <button class="sec_5_btn">Get Started</button>
                     <br>
                     <br>
-
                 </div>
             </div>
 
             <div class="apps">
                 <div>
                     <img src="{% static '/images/12.png' %}" alt="" class="sec_2_btn2">
-                    <img src="{% static '/images/13.png' %}" alt="" class="sec_2_btn3">
-
-                    <!--                     
-                    <button class="sec_5_btn1"><img src="{% static '/images/8.png' %}" alt="" class="app"><span
-                            class="app1">Download on the <br> <span class="app2">App Store</span> </button>
+                    <img src="{% static '/images/13.png' %}" alt="" class="sec_2_btn3">               
                 </div>
-
-                <div>
-                    <button class="sec_5_btn2"><img src="{% static '/images/9.png' %}" alt="" class="app"><span
-                            class="app1">Download on the <br> <span class="app2">App Store</span> </button> -->
-                </div>
-            </div>
-
-
-
-
-            <!-- <div>
-                <button class="sec_5_btn2"><img src="{% static '/images/9.png' %}" alt="" class="gapp"><span
-                        class="app2">Get on <br><span class="app3"></span>Google
-                        Play</span></button>
-            </div> -->
+            </div>          
         </div>
 
 
+        <!-- SECTION FIVE ENDS
+
+    
+    SECTION SIX BEGINS -->
 
     </section>
 
@@ -336,17 +295,18 @@
                     <p class="reviewflex1"> <strong>Login</strong><br> Express</p>
                 </div>
             </div>
-
         </div>
 
     </section>
 
+    <!-- SECTION SIX ENDS
+
+    
+    SECTION SEVEN BEGINS -->
 
     <section>
         <div class="sec_7">
             <DIV class="contact">
-
-
                 <DIV>
                     <H4>Products</H4>
                     <p>Bitcoin</p>
@@ -386,21 +346,13 @@
                     <p>Anti-Money Laundring</p>
                     <p>Terms & Condition</p>
                 </DIV>
-
-
             </DIV>
-
-        </div>
-
-    </section>
-
-
-    <section>
-        <div class="sec_8">
-            <div>
-
-                <img src="{% static '/images/11.png' %}" alt="" class="copy">2021 LoginExpress Technologies All Rights
-                Reserved
-            </div>
         </div>
     </section>
+
+    <!--     
+    SECTION EIGHT ENDS
+    FOOTER -->
+    <!-- SECTION EIGHT BEGINS -->
+
+    {% endblock %}

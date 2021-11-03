@@ -1,17 +1,17 @@
 from django.shortcuts import render, redirect
 # from django.contrib.auth import authenticate, login as dj_login
 from django.contrib import messages
-from .models import Individual, Business
+from .models import Business
 # from .models import User
 # from .forms import IndividualForm, BusinessForm
 
 # Create your views here.
 
-def home(request):
+def index(request):
     return render(request, 'index.html')
 
-def get_started(request):  
-    return render(request, 'getstarted.html')   
+# def get_started(request):  
+#     return render(request, 'getstarted.html')   
   
 
 

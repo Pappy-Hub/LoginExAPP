@@ -11,76 +11,16 @@
 </head>
 
 <body>
+    <!-- NavBar -->
+    {% include 'partials/_navbar.html' %}
 
-    <!-- SECTION 1 BEGINS -->
+    <!-- Main Content -->
+    {% block content %}
 
-    <!-- <h1>{{request.user}}</h1> -->
+    {% endblock %}
 
-
-    <section>
-        <div></div>
-        <nav class="sec_1">
-            <div>
-                <ul>
-                    <li class="logo"> <a href="{% url 'home' %}">Logi<strong>N</strong><strong>E</strong>xpress</a>
-                    </li>
-
-                    <div class="item">
-                        <li class="sec_1_1"><a href="{% url 'instantbuy' %}">Instant Buy/Sell</a></li>
-                        <li class="sec_1_2"><a href="{% url 'learn' %}">Learn</a></li>
-                        <button class="btg1"><a href="{% url 'login' %}">Log In</a></button>
-                        <button class="btg2"><a href="{% url 'getstarted' %}">Getting Started</a></button>
-                    </div>
-                </ul>
-            </div>
-        </nav>
-    </section>
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <!-- <h1 style="text-align: center; color: whitesmoke;">LEARN</h1> -->
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-   
-    
-      <section>
-        <div class="sec_8" style="width:100%;" >
-            <div>
-                <img src="{% static '/images/11.png' %}" alt="" class="copy" style="margin-top: -10px;">2021 LoginExpress Technologies All Rights
-                Reserved
-            </div>
-        </div>
-    </section>
-
+    <!-- Footer -->
+    {% include 'partials/_footer.html' %}
 
 
 </body>

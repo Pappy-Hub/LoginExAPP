@@ -1,12 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
-</head>
-<body>
-    <h1>REGISTER</h1>
-</body>
-</html>
+{% extends 'base.html' %}
+{% block content %}
+
+<br>
+
+<!-- SECTION 1 BEGINS -->
+</section>
+<br>
+<br>
+<div class="form1">
+    <h3>Welcome!</h3>
+    <!-- Alerts -->
+    {% include 'partials/_alerts.html' %}
+    <form action="" method="POST">
+
+        {% csrf_token %}
+        <!-- {{form}} -->
+
+        <div>
+            <button class="form_btn1"><a href="{% url 'register' %}" >Individual</a> </button>
+        </div>
+        <div>
+            <button class="form_btn2"><a href="{% url 'register' %}">Business</a> </button>
+        </div>
+        <br>
+        <input type="text" name="username" placeholder="Username" class="formstarted" required> <br> <br>
+        <input type="text" name="fullname" placeholder="Fullname" class="formstarted" required> <br> <br>
+        <input type="text" name="Email" placeholder="Email" class="formstarted" required> <br> <br>
+        <input type="number" name="phonenumber" placeholder="Phone Number" class="formstarted" required> <br> <br>
+        <input type="text" name="password" placeholder="Password" class="formstarted" required> <br> <br>
+        <input type="text" name="password" placeholder="Confirm Password" class="formstarted" required> <br> <br>
+        <input type="number" name="referralcode" placeholder="Referral Code (optional)" class="formstarted"> <br>
+        <p>By clicking the Sign Up button below, you agree to <br>
+            LoginExoress terms and services</p> <br>
+        <input type="submit" value="Sign Up" class="form_btn3">
+        <!-- <button class="form_btn3">Sign Up</button><br> -->
+        <p class="p1"> Already have an account? Click here</p>
+
+    </form>
+</div>
+
+<!-- END OF SECTION 1  -->
+<br>
+
+
+{% endblock %}
+

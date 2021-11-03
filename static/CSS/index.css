@@ -5,16 +5,19 @@ body{
 
 /* SECTION ONE BEGINS */
 
+.sec_1{     
+    position: fixed;  
+    width: 100%; 
+    overflow: hidden;  
+}
 
-nav{
-    /* position: fixed; */
-    position: absolute;
+
+nav{  
     background-color: #7C20BF;
-    height: 80px;
-    width: 98%;
-    margin-top: -10px;
-    overflow: hidden;
-    
+    height: 70px;
+    width: 99%;
+    margin-top: -20px;
+      
 } 
 
 nav ul{    
@@ -254,6 +257,8 @@ nav li a{
     text-align: center;
     background-color: white;
     color: #000000;
+    padding-bottom: 50px;
+  
 }
 
 .apps{
@@ -330,6 +335,7 @@ SECTION SIX BEGINS */
 
 
 .sec_6{
+    height: 350px;
     background-color: whitesmoke;
     padding-top: 20px;
 }
@@ -440,7 +446,7 @@ BEGINNING OF GET STARTED FORM STYLES */
 .form1{
     background-color: whitesmoke;
     width: 380px;
-    height: 430px;
+    height: 520px;
     padding-top: -10px;
     padding-bottom: 30px;
     margin-left: 500px;
@@ -602,14 +608,45 @@ select{
     position: relative;
     top: 21px;
     border-radius: 5px;
-    background-color: whitesmoke; 
+    /* background-color: whitesmoke;  */
+}
+
+.buy_btn a{
+    text-decoration: none;
+}
+
+.sell_btn a{
+    text-decoration: none;
+}
+
+ a:hover{
+    background-color:violet;
+}
+
+/* a:visited link{
+    background-color: green;
+} */
+
+
+/* .sell_btn:hover a{ */
+    /* color: cyan; */
+    /* background: cyan; */
+/* } */ 
+
+
+/* a:active{  
+    background-color: cyan;   
+} */
+ul:hover{
+    background-color:purple;
+
 }
 
 .sell_btn{
     width: 120px;
     margin-left: 140px;
     border-radius: 5px;
-    background-color: #E4E4E4;
+    /* background-color: #E4E4E4; */
     outline: none; 
 }
 
@@ -671,3 +708,10 @@ select{
     text-decoration: none;
     color: whitesmoke;
 }   
+
+
+/* JS Error message
+
+/* .close{
+    color: green;
+} */

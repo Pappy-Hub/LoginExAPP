@@ -1,52 +1,13 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static '/CSS/index.css' %}">
-    <title>GETTING STARTED</title>
-</head>
-
-<body>
+{% extends 'base.html' %}
+{% block content %}   
 
 
     <!-- SECTION 1 BEGINS -->
-
-
-    <section>
-        <div class="sec_1">
-            <nav>
-                <div>
-                    <ul>
-                        <li class="logo"> <a href="{% url 'home' %}">Logi<strong>N</strong><strong>E</strong>xpress</a>
-                        </li>
-                        <div class="item">
-                            <li class="sec_1_1"><a href="{% url 'instantbuy' %}">Instant Buy/Sell</a></li>
-                            <li class="sec_1_2"><a href="{% url 'learn' %}">Learn</a></li>
-                            <button class="btg1"><a href="{% url 'login' %}">Log In</a></button>
-                            <button class="btg2"><a href="{% url 'getstarted' %}">Getting Started</a></button>
-                        </div>
-                    </ul>
-                </div>
-
-            </nav>
-        </div>
-
-
-    </section>
     <br>
     <br>
     <br>
     <br>
-
-    <!-- END OF SECTION 1  -->
-
-
-
-    <div class="form1">
+    <div class="form2">
 
         <h3>Buy/Sell Instantly</h3>
 
@@ -92,7 +53,7 @@
             <br>
             <br>
 
-            <div >
+            <div>
                 <h4 class="amount1"> Amount </h4>
                 <input type="number" name="username" placeholder="NGN | 500,000,000,000 " class="amount2">
             </div>
@@ -105,18 +66,6 @@
     <br>
     <br>
 
-
-    <section>
-        <div class="sec_8" style="width:100%;">
-            <div>
-                <img src="{% static '/images/11.png' %}" alt="" class="copy" style="margin-top: -10px;">2021
-                LoginExpress Technologies All Rights
-                Reserved
-            </div>
-        </div>
-    </section>
-
-
-</body>
-
-</html>
+   <!-- END OF SECTION 1  -->
+   {% endblock %}
+   

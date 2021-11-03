@@ -1,44 +1,7 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static '/CSS/index.css' %}">
-    <title>DASHBOARD</title>
-</head>
-
-<body>
-
-    <section class="sec_1">
-        <!-- <h1>{{request.user}}</h1> -->
-        <nav>
+{% extends 'base.html' %}
+{% block content %}
+<h1>Dashboard</h1>
+<h1 style="text-align: center;">Dashboard</h1>
+{% endblock %}
 
 
-            <div>
-                <ul>
-                    <li class="logo"> <a href="{% url 'home' %}">Logi<strong>N</strong><strong>E</strong>xpress</a></li>
-
-                    <div class="item">
-                        <li class="sec_1_3"><a href="{% url 'instantbuy' %}">Instant Buy/Sell</a></li>
-                        <li class="sec_1_3"><a href="{% url 'learn' %}">Learn</a></li>
-                        <li class="sec_1_3"><a href="{% url 'login' %}">Log In</a></li>
-                        <li class="sec_1_3"><a href="{% url 'getstarted' %}">Get Started</a></li>
-
-                    </div>
-                </ul>
-            </div>
-
-        </nav>
-
-    </section>
-    <br>
-    <br>
-    <br>
-    <br>
-    <h1 style="text-align: center; color: whitesmoke;">DASHBAORD</h1>
-</body>
-
-</html>

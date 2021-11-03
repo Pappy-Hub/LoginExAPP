@@ -1,85 +1,46 @@
+{% extends 'base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static '/CSS/index.css' %}">
-    <title>GETTING STARTED</title>
-</head>
+{% block content %}
 
-<body>
+<!-- SECTION 1 BEGINS -->
+<br>
+<br>
+<br>
+<br>
 
+<div class="form1">
+    <h3>Welcome!</h3>
+    <!-- Alerts -->
+    {% include 'partials/_alerts.html' %}
+    <form action="" method="POST">
 
-    <!-- SECTION 1 BEGINS -->
-
-
-    <section>
-        <div class="sec_1">
-            <nav>
-                <div>
-                    <ul>
-                        <li class="logo"> <a href="{% url 'home' %}">Logi<strong>N</strong><strong>E</strong>xpress</a>
-                        </li>
-                        <div class="item">
-                            <li class="sec_1_1"><a href="{% url 'instantbuy' %}">Instant Buy/Sell</a></li>
-                            <li class="sec_1_2"><a href="{% url 'learn' %}">Learn</a></li>
-                            <button class="btg1"><a href="{% url 'login' %}">Log In</a></button>
-                            <button class="btg2"><a href="{% url 'getstarted' %}">Getting Started</a></button>
-                        </div>
-                    </ul>
-                </div>
-
-            </nav>
+        {% csrf_token %}
+        <!-- {{form}} -->
+    
+        <div>
+            <button class="form_btn1" style="margin-left: 50px;"><a href="{% url 'register' %}" >Business</a> </button>
         </div>
+        <br>
+        <input type="text" name="username" placeholder="Username" class="formstarted" required> <br> <br>
+        <input type="text" name="fullname" placeholder="Fullname" class="formstarted" required> <br> <br>
+        <input type="text" name="Email" placeholder="Email" class="formstarted" required> <br> <br>
+        <input type="number" name="phonenumber" placeholder="Phone Number" class="formstarted" required> <br> <br>
+        <input type="text" name="password" placeholder="Password" class="formstarted" required> <br> <br>
+        <input type="text" name="password" placeholder="Confirm Password" class="formstarted" required> <br> <br>
+        <input type="number" name="referralcode" placeholder="Referral Code (optional)" class="formstarted"> <br>
+        <p>By clicking the Sign Up button below, you agree to <br>
+            LoginExoress terms and services</p> <br>
+        <input type="submit" value="Sign Up" class="form_btn3">
+        <!-- <button class="form_btn3">Sign Up</button><br> -->
+        <p class="p1"> Already have an account? Click here</p>
 
-
-    </section>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <!-- END OF SECTION 1  -->
-
-
-
-    <div class="form1">
-        <h3>Welcome!</h3>
-        <form action="" method="POST">
-
-         {% csrf_token %}
-         <!-- {{form}}   -->
-
-            <div>
-                <button class="form_btn1"><a href="{% url 'business' %}">Business</a> </button>
-            </div>
-
-            <!-- <div>
-                <button class="form_btn2">Business</button>
-            </div> -->
-            <br>
-            <input type="text" name="username" placeholder="Username" class="formstarted"> <br> <br>
-            <input type="text" name="fullname" placeholder="Fullname" class="formstarted"> <br> <br>
-            <input type="text" name="Email" placeholder="Email" class="formstarted"> <br> <br>
-            <input type="number" name="phonenumber" placeholder="Phone Number" class="formstarted"> <br> <br>
-            <input type="number" name="referralcode" placeholder="Referral Code (optional)" class="formstarted"> <br>
-            <p>By clicking the Sign Up button below, you agree to <br>
-                LoginExoress terms and services</p> <br>
-            <input type="submit" value="Sign Up" class="form_btn3">
-
-            <!-- <button class="form_btn3"><a href="{& url 'admin' %}">Sign Up</a> </button><br> -->
-            <p class="p1"> Already have an account? Click here</p>
-
-        </form>
-    </div>
-    <!-- {% for message in messages %}
+    </form>
+</div>
+<br>
+<br>
+<!-- {% for message in messages %}
     <h3> {{message}} </h3>
     {% endfor %} -->
 
-</body>
-
-</html>     
+{% endblock %}
