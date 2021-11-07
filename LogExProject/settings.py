@@ -27,6 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+# ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+
 
 # Application definition
 
@@ -135,3 +137,9 @@ from django.contrib.messages import constants as messages
 MESASAGES_TAGS =  {
     messages.ERROR: 'danger'
 }
+
+
+
+LOGIN_REDIRECT_URL = '/'
+LOGIN_URL = '/login'
+LOGOUT_REDIRECT_URL = '/'

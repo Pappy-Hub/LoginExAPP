@@ -8,7 +8,7 @@ from .models import Business
 # Create your views here.
 
 def index(request):
-    return render(request, 'index.html')
+    return render(request, 'pages/index.html')
 
 # def get_started(request):  
 #     return render(request, 'getstarted.html')   
@@ -21,11 +21,11 @@ def index(request):
 
 
 def learn(request):
-    return render(request, 'learn.html') 
+    return render(request, 'pages/learn.html') 
   
 
 def instant_buy(request):
-    return render(request, 'instantbuy.html')       
+    return render(request, 'pages/instantbuy.html')       
     #  return redirect ('/')
 
 
@@ -35,26 +35,16 @@ def dashboard(request):
 
 
 def individual(request):
-   
-
-    return render(request, 'individual.html')
+    return render(request, 'pages/individual.html')
  
 
 
 
-def business(request):
-   
-    return render(request, 'business.html')
+def business(request):   
+    return render(request, 'pages/business.html')
      
 
 
 
-def base(request):
-    return render(request, 'base.html')       
-    #  return redirect ('/')
-
-
-
-
 def welcome(request):
-    return render(request, 'welcome.html')    
+    return render(request, 'pages/welcome.html')    
